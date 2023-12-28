@@ -9,7 +9,7 @@ var userRoute=require('./routes/userRoute')
 app.use(bodyParser.json())
 app.use('/api/orders/',orderRoute)
 app.use('/api/product/',productRoute)
-app.use('/api/users/',userRoute)
+app.use('/api/users/',userRoute) 
 if(process.env.NODE_ENV==='production'){
    app.use('/',express.static('client/build')) 
    // app.get('*',(req,res)=>{
