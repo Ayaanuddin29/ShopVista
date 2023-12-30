@@ -13,7 +13,7 @@ export default function Orderslist() {
     dispatch(getAllOrders())
   },[])
   return (
-    <div>
+    <div className='order'>
       {loading && <Loader/>}
       {error && <Error error={'something went wrong'}/>}
       <h2>Orders List</h2>
