@@ -8,9 +8,9 @@ export default function Cartscreen() {
     const {cartItems}=cartreducerstate;
     var subtotal=cartItems.reduce((acc,item)=>acc+(item.price*item.quantity),0)
   return (
-    <div>
+    <div className='cart'>
    
-     <div className='row mt-5 justify-content-center'>
+     <div className='row  mt-5 justify-content-center'>
        <div className='col-md-8 card text-center shadow p-3 mb-5 bg-white rounded'>
        <h1 className='text-center m-5'>MY CART</h1>
        <div className='table-responsive'>

@@ -33,7 +33,7 @@ export default function Addproduct() {
       <div className='row justify-content-center'>
         <div className='col-md-8'>
         <h2>Add Product</h2>
-        {loading &&(<Loader />)}
+        
     {success && (<Success success='your order placed successfully'/>) }
     {error && (<Error error='something went wrong'/> )}
         <form onSubmit={addproduct}>

@@ -8,8 +8,12 @@ body {
   text-decoration: none;
   color:black;
   list-style: none;
+  height: 100vh !important;
 }
-
+.cart{
+  height: 80vh;
+  margin: auto;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -96,4 +100,3 @@ select{
 .ppp{
   text-decoration: none;
 }
-

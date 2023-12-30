@@ -34,7 +34,7 @@ export const filterProducts=(searchkey,sort,category)=>dispatch=>{
     filterproducts=res.data
         if(searchkey){
             filterproducts=res.data.filter(product=>{
-              return product.name.toLowerCase().includes(searchkey)
+              return product.name.includes(searchkey)
             })
             if(sort!='popular'){
               if(sort==='htl'){
@@ -90,7 +90,7 @@ export const addProduct=(product)=>dispatch=>{
   axios.post('/api/product/addproduct',{product}).then(res=>{
     console.log(res)
     dispatch({type:"ADD_PRODUCT_SUCCESS"})
-    window.location.reload();
+    window.location.href="/admin/addproduct"
   }).catch(err=>{
     dispatch({type:'ADD_PRODUCT_FAILED'})
   })
